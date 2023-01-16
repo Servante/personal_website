@@ -11,7 +11,28 @@
   </head>
 
   <body>
-    <div id="header"></div>
+    <div id="header">
+      <div id="left-links">
+        <%= link_to "wes larson", root_path %>
+      </div>
+      <div id="right-links">
+        <div class="header-link">
+          <%= link_to "home", root_path %>
+        </div>
+        <div class="header-link">
+          <%= link_to "portfolio", pages_portfolio_path %>
+        </div>
+        <div class="header-link">
+          <%= link_to "blog", pages_blog_path %>
+        </div>
+        <div class="header-link">
+          <%= link_to "about", pages_about_path %>
+        </div>
+        <!-- </div class="header-link">
+          <%#link_to "resume", resume_path %>
+        </div> --> 
+      </div>
+    </div>
     <div id="content"><%= yield %></div>
     <div id="footer">
   </body>
