@@ -12,27 +12,27 @@
     <%# javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body class= ">
-    <div id="header">
-      <div id="left-links">
+  <body class="flex flex-col h-screen m-0 overflow-hidden">
+    <div class="flex justify-between p-2 bg-red-800 items-center p-4">
+      <div>
         <%= link_to "wes larson development", root_path %>
       </div>
-      <div id="right-links">
-        <div class="header-link">
+      <div class="flex gap-2">
+        <div>
           <%= link_to "home", root_path %>
         </div>
-        <div class="header-link">
+        <div>
           <%= link_to "portfolio", pages_portfolio_path %>
         </div>
-        <div class="header-link">
+        <div>
           <%= link_to "blog", pages_blog_path %>
         </div>
-        <div class="header-link">
+        <div>
           <%= link_to "about", pages_about_path %>
         </div>
       </div>
     </div>
-    <div id="content"><%= yield %></div>
-    <div id="footer">
+    <div class="flex-1 flex items-center justify-center flex-col bg-slate-400"><%= yield %></div>
+    <div class="flex justify-between p-2 bg-red-800">
   </body>
 </html>
