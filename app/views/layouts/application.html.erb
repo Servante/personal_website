@@ -13,26 +13,39 @@
   </head>
 
   <body class="flex flex-col h-screen m-0 overflow-hidden">
-    <div class="flex justify-between p-2 bg-red-800 items-center p-4">
+    <div class="flex justify-between p-2 bg-red-800 items-center p-4 font-semibold">
       <div>
         <%= link_to "wes larson development", root_path %>
       </div>
-      <div class="flex gap-2">
-        <div>
+      <div class="flex gap-3">
+        <div class="hover:text-yellow-300">
           <%= link_to "home", root_path %>
         </div>
-        <div>
+        <div class="hover:text-yellow-300">
           <%= link_to "portfolio", pages_portfolio_path %>
         </div>
-        <div>
+        <div class="hover:text-yellow-300">
           <%= link_to "blog", pages_blog_path %>
         </div>
-        <div>
+        <div class="hover:text-yellow-300">
           <%= link_to "about", pages_about_path %>
         </div>
       </div>
     </div>
     <div class="flex-1 flex items-center justify-center flex-col bg-slate-400"><%= yield %></div>
-    <div class="flex justify-between p-2 bg-red-800">
+      <div class="flex justify-between p-2 bg-red-800">
+        <div class="flex gap-1">
+          <div>
+            <%= image_tag("linkdin_icon.png") %>
+          </div>
+          <div>
+            <%= image_tag("github_icon.png") %>
+          </div>
+          <div>
+            <%# image_tag("email_icon.png") %>
+          </div>
+        </div>
+      </div>    
+    </div>
   </body>
 </html>
