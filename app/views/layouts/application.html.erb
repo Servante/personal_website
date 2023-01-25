@@ -13,8 +13,8 @@
   </head>
 
   <body class="flex flex-col h-screen m-0 overflow-hidden">
-    <div class="flex justify-between p-2 bg-red-800 items-center p-4 font-semibold">
-      <div>
+    <div class="flex justify-center sm:justify-between p-2 bg-red-800 items-center p-4 font-semibold">
+      <div class="hover:text-yellow-300 hidden lg:block">
         <%= link_to "wes larson development", root_path %>
       </div>
       <div class="flex gap-3">
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="flex-1 flex items-center justify-center flex-col bg-slate-400"><%= yield %></div>
-      <div class="flex justify-between p-2 bg-red-800 w-full">
+      <div class="flex justify-center sm:justify-between p-3 bg-red-800 w-full items-center">
         <div class="flex gap-1">
           <div>
             <%= link_to image_tag("linkdin_icon.png"), "https://www.linkedin.com/feed/" %>
@@ -42,10 +42,10 @@
             <%= link_to image_tag("github_icon.png"), "https://github.com/" %>
           </div>
         </div>
-        <div class="flex text-yellow-300">
+        <div class="flex text-yellow-300 hidden lg:block">
           Available: January 2023
         </div>
-        <div class="flex flex-col font-semibold text-sm">
+        <div class="flex flex-col font-semibold text-sm hidden lg:block">
           <div>Phn: 971-203-4256</div>
           <div>Email: mlarson959@gmail.com</div>
         </div>
