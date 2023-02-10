@@ -1,37 +1,118 @@
-<div class="flex pt-8 items-center justify-center flex-col gap-8 my-12 overflow-y-hidden">
-  <div class="flex flex-col gap-3 w-full flex items-center justify-center bg-blue-500">
+<div class="flex pt-8 items-center justify-center flex-col gap-16 my-12 overflow-y-hidden">
+  <h2 class="text-5xl font-normal leading-normal mt-0 mb-6 font-bold">Recent Projects</h2>
+  <div class="flex flex-col gap-3 w-full flex items-center justify-center">
     <div>
-      <%= image_tag "gears.png", class: "object-contain h-72 w-full, rounded-md" %>
+      <%= image_tag "flight_booker_sample.png", class: "object-contain h-72 w-full, rounded-md" %>
     </div>
-    <div class="h-36 w-1/2 rounded-md bg-yellow-50">
-      <h3>Flight Booker</h3>
-      <p>
-        A Ruby on Rails application for booking flights and adding passengers.  Tests written in <strong>rspec</strong> and <strong>capybara</strong>
-      </p>
+    <div class="w-1/2 min-w-[306px] max-w-[755px] p-2 rounded-md bg-yellow-50">
+      <div class="flex w-auto justify-between items-center">
+        <h3 class="font-semibold">Flight Booker</h3>
+        <div class="flex gap-3">
+          <%= link_to "https://odin-flight-booker-wes.herokuapp.com/" do %>
+            <i class="devicon-heroku-plain-wordmark colored text-5xl"></i>  
+          <% end%>
+          <%= link_to "https://github.com/Servante/odin_flight_booker" do %>
+            <i class="devicon-github-original-wordmark colored text-5xl"></i>  
+          <% end%>                      
+        </div>
+      </div><br>
+      <div>
+        <p>
+          A Ruby on Rails application for booking flights and adding passengers.  Tests written in <strong>Rspec</strong> and <strong>Capybara</strong>.
+        </p>
+      </div>
     </div>
   </div>
-  <div class="flex flex-col gap-3 w-full h-96 flex items-center justify-center bg-blue-500">
+  <div class="flex flex-col gap-3 w-full flex items-center justify-center">
     <div>
-      <%= image_tag "gears.png", class: "object-contain h-72 w-full, rounded-md" %>
+      <%= image_tag "flickr_api_sample.png", class: "object-contain h-72 w-full, rounded-md" %>
     </div>
-    <div class="h-36 w-1/2 rounded-md bg-yellow-50">
-      Here are some words I'm just kinda throwing out there. 
+    <div class="w-1/2 min-w-[306px] max-w-[755px] p-2 rounded-md bg-yellow-50">
+      <div class="flex w-auto justify-between items-center">
+        <h3 class="font-semibold">Flickr-API</h3>
+      <div class="flex gap-3">
+        <%= link_to "https://flickr-api.herokuapp.com/" do %>
+          <i class="devicon-heroku-plain-wordmark colored text-5xl"></i>  
+        <% end%>
+        <%= link_to "https://github.com/Servante/flickr-api" do %>
+          <i class="devicon-github-original-wordmark colored text-5xl"></i>  
+        <% end%>                      
+      </div>
+    </div><br>
+      <div>
+        <p>
+          An app that utilizes the Flickr API to return the gallery of the inputted user_id. Don't have a Flickr ID to test it out on? Can't say I'm surprised. You can use mine:  197392274@N05 (although if you or someone you know does have a Flickr account, you can get this number by copying it from the browser address bar at the top of your profile page. It will look like this: flickr.com/photos/197392274@N05/)
+        </p>
+      </div> 
     </div>
   </div>
-  <div class="flex flex-col gap-3 w-full h-96 flex items-center justify-center bg-blue-500">
+  <div class="flex flex-col gap-3 w-full flex items-center justify-center">
     <div>
-      <%= image_tag "gears.png", class: "object-contain h-72 w-full, rounded-md" %>
+      <%= image_tag "twitter_clone_sample.png", class: "object-contain h-72 w-full, rounded-md" %>
     </div>
-    <div class="h-36 w-1/2 rounded-md bg-yellow-50">
-      Here are some words I'm just kinda throwing out there. 
+    <div class="w-1/2 min-w-[306px] max-w-[755px] p-2 rounded-md bg-yellow-50">
+      <div class="flex w-auto justify-between items-center">
+        <h3 class="font-semibold">Twitter Clone</h3>
+        <div class="flex gap-3">
+          <%= link_to "https://twitter-clone-wes.herokuapp.com/" do %>
+            <i class="devicon-heroku-plain-wordmark colored text-5xl"></i>  
+          <% end%>
+          <%= link_to "https://github.com/Servante/twitter_clone" do %>
+            <i class="devicon-github-original-wordmark colored text-5xl"></i>  
+          <% end%>                      
+        </div>
+      </div><br>
+      <div>
+        <p>
+          A twitter clone. Users sign up for accounts using <strong>devise</strong>. They can create, retweet, comment on and favorite tweets using <strong>nested routes</strong> and <strong>relational mapping</strong> with <strong>ActiveStorage</strong>.  Built with <strong>tailwind css</strong>.
+        </p>
+      </div>
     </div>
   </div>
-  <div class="flex flex-col gap-3 w-full h-96 flex items-center justify-center bg-blue-500">
+  <div class="flex flex-col gap-3 w-full flex items-center justify-center">
     <div>
-      <%= image_tag "gears.png", class: "object-contain h-72 w-full, rounded-md" %>
+      <%= image_tag "members_only_sample.png", class: "object-contain h-72 w-full, rounded-md" %>
     </div>
-    <div class="h-36 w-1/2 rounded-md bg-yellow-50">
-      Here are some words I'm just kinda throwing out there. 
+    <div class="w-1/2 min-w-[306px] max-w-[755px] p-2 rounded-md bg-yellow-50">
+      <div class="flex w-auto justify-between items-center">
+        <h3 class="font-semibold">Members-Only</h3>
+        <div class="flex gap-3">
+          <%= link_to "https://members-only.herokuapp.com/" do %>
+            <i class="devicon-heroku-plain-wordmark colored text-5xl"></i>  
+          <% end%>
+          <%= link_to "https://github.com/Servante/members_only" do %>
+            <i class="devicon-github-original-wordmark colored text-5xl"></i>  
+          <% end%>                      
+        </div>
+      </div><br>
+      <div>
+        <p>
+          A simple <strong>CRUD</strong> blog which allows user to create, read, edit and delete posts.   Basic <strong>authenticaton</strong> and <strong>authorization</strong> determines which posts can be edited or deleted, and all post authors are anonymous unless user is signed in.
+        </p>
+      </div>
+    </div>
+  </div>
+   <div class="flex flex-col gap-3 w-full flex items-center justify-center">
+    <div>
+      <%= image_tag "private_events_sample.png", class: "object-contain h-72 w-full, rounded-md" %>
+    </div>
+    <div class="w-1/2 min-w-[306px] max-w-[755px] p-2 rounded-md bg-yellow-50">
+      <div class="flex w-auto justify-between items-center">
+        <h3 class="font-semibold">Private Events</h3>
+        <div class="flex gap-3">
+          <%= link_to "https://private-events.herokuapp.com/" do %>
+            <i class="devicon-heroku-plain-wordmark colored text-5xl"></i>  
+          <% end%>
+          <%= link_to "https://github.com/Servante/private_events" do %>
+            <i class="devicon-github-original-wordmark colored text-5xl"></i>  
+          <% end%>                      
+        </div>
+      </div><br>
+      <div>
+        <p>
+          Another CRUD application which allows users to create an account and view, create, edit, delete and attend events. Utilizes <strong>ActiveRecord Associations</strong> and <strong>database querying</strong>.
+        </p>
+      </div>
     </div>
   </div>
 </div>
